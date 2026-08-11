@@ -1,0 +1,35 @@
+{
+  "mode": "paper",
+  "venue": "drift",
+  "chain": "Solana",
+  "model": "hybrid CLOB / vAMM",
+  "symbol": "SOL-PERP",
+  "loopIntervalMs": 400,
+  "paper": {
+    "initialEquityUsd": 10000,
+    "feeBps": 6,
+    "slippageBps": 4,
+    "volatility": 0.014
+  },
+  "risk": {
+    "maxDailyLossUsd": 300,
+    "maxDrawdownPct": 10,
+    "maxNotionalUsd": 8000,
+    "maxPositionUsd": 3000,
+    "maxLeverage": 5,
+    "killSwitch": false
+  },
+  "live": {
+    "confirmRequired": true,
+    "dryRunOrders": true
+  },
+  "strategy": {
+    "type": "hybrid_sol",
+    "jitPenaltyBps": 8,
+    "breakoutBufferPct": 0.15,
+    "riskPerTradePct": 0.4,
+    "takeProfitR": 1.8,
+    "stopLossR": 1,
+    "preferMaker": true
+  }
+}
