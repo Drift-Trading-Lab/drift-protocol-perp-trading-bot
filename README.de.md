@@ -124,7 +124,7 @@ Drift hybrid desk: prefer **maker/CLOB** when depth is healthy, otherwise AMM-aw
 Let quoted edge $e_t$ (bps), JIT penalty $j=$ `jitPenaltyBps`, and breakout buffer $b=$ `breakoutBufferPct` / 100:
 
 $$
-\mathrm{net}_t = e_t - j - f_{\text{bps}} - \text{prio\_bps}
+\mathrm{net}_t = e_t - j - f_{\text{bps}} - \mathrm{prio\_bps}
 $$
 
 **Breakout** on marks with buffer $b$ (same range logic as day desks). **Route**:
