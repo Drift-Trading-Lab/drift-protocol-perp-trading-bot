@@ -15,7 +15,9 @@
     "live": "tsx src/index.ts --mode live --confirm-live",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "test": "tsx --test tests/strategy.test.ts tests/ledger.test.ts",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf dist",
+    "dashboard": "python3 -m http.server 4173 --directory dashboard",
+    "ui": "python3 -m http.server 4173 --directory dashboard"
   },
   "keywords": [
     "drift protocol bot",
